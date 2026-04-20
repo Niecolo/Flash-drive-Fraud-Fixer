@@ -1,4 +1,4 @@
-# Flash Drive Fraud Fixer (F3)
+# Flash Drive Fraud Fixer 
 ## Detect and Fix Fake / Counterfeit USB Flash Drives
 
 Windows GUI application that accurately tests USB flash drives for fake capacity, detects real usable size, and can permanently fix counterfeit drives at the firmware level.
@@ -6,7 +6,7 @@ Windows GUI application that accurately tests USB flash drives for fake capacity
 ---
 
 ### ⚠️ IMPORTANT SAFETY WARNING
-This software performs low-level disk operations and modifies drive firmware. **USE AT YOUR OWN RISK**. Always backup important data before testing or modifying any drive. This tool is for advanced users only.
+This software performs low-level disk operations. **USE AT YOUR OWN RISK**. Always backup important data before testing or modifying any drive. This tool is for advanced users only.
 
 ---
 
@@ -29,7 +29,9 @@ This software performs low-level disk operations and modifies drive firmware. **
 
 Fake flash drives work by lying about their real capacity in the controller firmware. When you write data beyond the actual capacity, the drive just wraps around, overwriting old data without any warning.
 
-F3 uses an advanced testing methodology:
+uses an advanced testing methodology:
+<img width="1365" height="722" alt="image" src="https://github.com/user-attachments/assets/4f14198d-9ebd-489f-aa0c-5dd87e364f95" />
+
 1.  Writes unique verifiable test patterns to the entire drive
 2.  Reads back and verifies every sector
 3.  Detects exactly where corruption starts
